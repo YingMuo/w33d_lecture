@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  got:
+    build: ./
+    volumes:
+      - ./share:/home/got:ro
+      - ./xinetd:/etc/xinetd.d/got:ro
+    ports:
+      - "30005:10101"
+    expose:
+      - "10101"
