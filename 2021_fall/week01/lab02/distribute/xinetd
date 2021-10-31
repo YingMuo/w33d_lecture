@@ -1,0 +1,12 @@
+service guess
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/guess/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = guess
+        port = 10101
+        flags = REUSE
+}
