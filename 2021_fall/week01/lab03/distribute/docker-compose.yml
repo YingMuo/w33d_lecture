@@ -7,6 +7,6 @@ services:
       - ./share:/home/ret2sc:ro
       - ./xinetd:/etc/xinetd.d/ret2sc:ro
     ports:
-      - "30001:10101"
+      - "30003:10101"
     expose:
       - "10101"
