@@ -13,6 +13,7 @@ void init_prog()
 
 int main(void)
 {
+    init_prog();
     char buf[0x10] = {0};
     char *name = mmap((void *)0x410000, 0x1000, PROT_EXEC | PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
     if (name == (void *)-1)
