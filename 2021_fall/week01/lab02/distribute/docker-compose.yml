@@ -1,12 +1,12 @@
 version: '3'
 
 services:
-  guess:
+  bof:
     build: ./
     volumes:
-      - ./share:/home/guess:ro
-      - ./xinetd:/etc/xinetd.d/guess:ro
+      - ./share:/home/bof:ro
+      - ./xinetd:/etc/xinetd.d/bof:ro
     ports:
-      - "30202:10101"
+      - "30002:10101"
     expose:
       - "10101"

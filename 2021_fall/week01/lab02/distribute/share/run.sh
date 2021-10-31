@@ -1,4 +1,4 @@
 #!/bin/sh
 
 exec 2>/dev/null
-timeout 60 /home/guess/guess
+timeout 60 /home/bof/bof

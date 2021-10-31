@@ -3,8 +3,8 @@ MAINTAINER YingMuo
 
 RUN apt-get update
 RUN apt-get install xinetd -qy
-RUN useradd -m guess
-RUN chown -R root:root /home/guess
-RUN chmod -R 755 /home/guess
+RUN useradd -m bof
+RUN chown -R root:root /home/bof
+RUN chmod -R 755 /home/bof
 
 CMD ["/usr/sbin/xinetd","-dontfork"]

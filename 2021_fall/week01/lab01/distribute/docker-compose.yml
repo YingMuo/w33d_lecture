@@ -7,6 +7,6 @@ services:
       - ./share:/home/guess:ro
       - ./xinetd:/etc/xinetd.d/guess:ro
     ports:
-      - "30202:10101"
+      - "30001:10101"
     expose:
       - "10101"

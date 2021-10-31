@@ -1,2 +1,2 @@
 all:
-	gcc guess.c -o guess
+	gcc -fno-stack-protector -no-pie bof.c -o bof
