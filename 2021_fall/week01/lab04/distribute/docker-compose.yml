@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  canary:
+    build: ./
+    volumes:
+      - ./share:/home/canary:ro
+      - ./xinetd:/etc/xinetd.d/canary:ro
+    ports:
+      - "30004:10101"
+    expose:
+      - "10101"

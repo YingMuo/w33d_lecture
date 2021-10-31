@@ -11,7 +11,7 @@ void init_prog()
 
 void debug()
 {
-    system("sh");
+    execve("/bin/sh", NULL, NULL);
 }
 
 int main(void)
