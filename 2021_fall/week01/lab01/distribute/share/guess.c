@@ -39,8 +39,6 @@ int main(void)
     if (number < 0)
         number *= -1;
 
-    printf("%d\n", number);
-
     int guess = -1;
     while (1)
     {
