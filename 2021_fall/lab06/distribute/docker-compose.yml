@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  babyrop:
+    build: ./
+    volumes:
+      - ./share:/home/babyrop:ro
+      - ./xinetd:/etc/xinetd.d/babyrop:ro
+    ports:
+      - "30005:10101"
+    expose:
+      - "10101"

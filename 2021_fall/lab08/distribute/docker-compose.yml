@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  rop_migration:
+    build: ./
+    volumes:
+      - ./share:/home/rop_migration:ro
+      - ./xinetd:/etc/xinetd.d/rop_migration:ro
+    ports:
+      - "30005:10101"
+    expose:
+      - "10101"
