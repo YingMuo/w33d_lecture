@@ -7,6 +7,6 @@ services:
       - ./share:/home/babyrop:ro
       - ./xinetd:/etc/xinetd.d/babyrop:ro
     ports:
-      - "30005:10101"
+      - "30006:10101"
     expose:
       - "10101"

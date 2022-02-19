@@ -7,6 +7,6 @@ services:
       - ./share:/home/rop_revenge:ro
       - ./xinetd:/etc/xinetd.d/rop_revenge:ro
     ports:
-      - "30005:10101"
+      - "30007:10101"
     expose:
       - "10101"

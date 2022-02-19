@@ -1,0 +1,12 @@
+service rop_migration_rev
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/rop_migration_rev/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = rop_migration_rev
+        port = 10101
+        flags = REUSE
+}

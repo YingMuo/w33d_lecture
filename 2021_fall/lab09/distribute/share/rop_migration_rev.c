@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 void init_prog()
 {
@@ -11,7 +12,10 @@ int main(void)
 {
     init_prog();
     char buf[0x20] = {0};
-    gets(buf);
 
+    // puts("reveeeeeeeeeenge!!");
+    write(1, "migration revenge!\n", 19);
+    read(0, buf, 0x30);
+    
     return 0;
 }

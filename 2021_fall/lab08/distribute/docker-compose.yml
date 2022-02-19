@@ -7,6 +7,6 @@ services:
       - ./share:/home/rop_migration:ro
       - ./xinetd:/etc/xinetd.d/rop_migration:ro
     ports:
-      - "30005:10101"
+      - "30008:10101"
     expose:
       - "10101"
